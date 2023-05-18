@@ -31,3 +31,7 @@
 .navbar .navlink ul li {
     margin: 0 25px;
 }
+
+.active a {
+    color: red;
+}
