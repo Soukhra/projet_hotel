@@ -31,10 +31,11 @@
 
 .navbar .navlink ul {
     display: flex;
+    padding-right: 60px;
 }
 
 .navbar .navlink ul li {
-    margin: 0 40px;
+    margin: 0 50px;
 }
 
 .active a {
