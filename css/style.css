@@ -8,7 +8,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgb(180, 176, 176);
     width: 100%;
     padding: 50px;
     align-items: center;
@@ -19,6 +19,8 @@
 }
 
 .navbar .logo {
+    width: 150px;
+    height: 150px;
     font-weight: bold;
     font-size: 2em;
 }
@@ -51,8 +53,25 @@
 }
 
 @media screen and (max-width: 1100px) {
+    .navbar {
+        height: 200px;
+    }
     .navbar .navlink {
-        display: none;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10px;
+        left: -200px;
+    }
+    .navbar .navlink ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .navlink ul li {
+        font-size: 1.5em;
+        margin-top: 20px;
     }
     .navbar .menu {
         display: block;
