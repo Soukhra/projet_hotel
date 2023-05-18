@@ -8,11 +8,11 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: black;
     width: 100%;
-    box-sizing: border-box;
     padding: 50px;
+    box-sizing: border-box;
+    align-items: center;
 }
 
 .navbar a {
@@ -20,8 +20,13 @@
 }
 
 .navbar .logo {
-    font-size: 2em;
     font-weight: bold;
+    font-size: 2em;
+}
+
+.navbar .navlink {
+    display: flex;
+    align-items: center;
 }
 
 .navbar .navlink ul {
@@ -29,7 +34,7 @@
 }
 
 .navbar .navlink ul li {
-    margin: 0 25px;
+    margin: 0 40px;
 }
 
 .active a {
