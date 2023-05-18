@@ -41,8 +41,20 @@
     color: red;
 }
 
+.menu {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    display: none;
+}
+
 @media screen and (max-width: 1100px) {
     .navbar .navlink {
         display: none;
+    }
+    .navbar .menu {
+        display: block;
     }
 }
