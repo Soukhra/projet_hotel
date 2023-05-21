@@ -29,6 +29,23 @@
 
 </body>
 <script>
+    var menus = document.getElementsByClassName('menu')[0]
+    console.log(menus)
+    var navlinks = document.getElementsByClassName('navlink')[0]
+    console.log(navlinks)
+    menus.onclick = function() {
+        if (navlinks.classList.contains('apparition')) {
+            navlinks.classList.remove('apparition');
+            navlinks.classList.add('navlink');
+
+
+        } else {
+            navlinks.classList.add('apparition');
+            navlinks.classList.remove('navlink');
+
+        }
+
+    }
 </script>
 
 </html>

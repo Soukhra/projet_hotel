@@ -10,7 +10,6 @@
     justify-content: space-between;
     background-color: rgb(180, 176, 176);
     width: 100%;
-    padding: 50px;
     align-items: center;
 }
 
@@ -19,8 +18,8 @@
 }
 
 .navbar .logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     font-weight: bold;
     font-size: 2em;
 }
@@ -28,6 +27,7 @@
 .navbar .navlink {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .navbar .navlink ul {
@@ -43,7 +43,7 @@
     color: red;
 }
 
-.menu {
+.navbar .menu {
     height: 60px;
     width: 60px;
     position: absolute;
@@ -54,26 +54,42 @@
 
 @media screen and (max-width: 1100px) {
     .navbar {
-        height: 200px;
+        height: 250px;
+        width: 100%;
     }
     .navbar .navlink {
         position: absolute;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        top: 10px;
-        left: -200px;
+        top: -150px;
+        right: 0;
+        transition: 0.6s;
     }
     .navbar .navlink ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
     .navbar .navlink ul li {
+        padding: 0 5px;
         font-size: 1.5em;
-        margin-top: 20px;
     }
     .navbar .menu {
+        right: 5%;
+        position: absolute;
         display: block;
+    }
+    .apparition {
+        background-color: rgb(8, 15, 15);
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        right: 0;
+        top: 7.3%;
+        transition: 1s;
+        font-size: 1.7em;
     }
 }
